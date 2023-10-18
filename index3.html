@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Job Listing</h1>
+        </nav>
+    </header>
+    <main>
+      <!-- Job Filter Elements -->
+      <div class="job-filter">
+        <h2>Filter Jobs</h2>
+        <label for="jobTypeFilter">Job Type:</label>
+        <select id="jobTypeFilter">
+            <option value="All">All</option>
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Contract">Contract</option>
+        </select>
+        <label for="jobLocationFilter">Job Location:</label>
+        <input type="text" id="jobLocationFilter" placeholder="Enter location">
+        <label for="jobTagsFilter">Job Tags:</label>
+        <input type="text" id="jobTagsFilter" placeholder="Enter tags">
+        <button id="filterButton">Filter Jobs</button>
+    </div>
+
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">Photosnap</span>
+            <span class="label new">New!</span>
+            <span class="label featured">Featured</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Senior Frontend Developer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Frontend</span>
+              <span class="right-tag">Senior</span>
+              <span class="right-tag">HTML</span>
+              <span class="right-tag">CSS</span>
+              <span class="right-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">1 day ago</span> &bull;
+            <span class="light-tag">Full time</span> &bull;
+            <span class="light-tag">USA only</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">Manage</span>
+            <span class="label new">New!</span>
+            <span class="label featured">Featured</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Fullstack Developer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Fullstack</span>
+              <span class="right-tag">Midweight</span>
+              <span class="right-tag">Python</span>
+              <span class="right-tag">React</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">1 day ago</span> &bull;
+            <span class="light-tag">Part Time</span> &bull;
+            <span class="light-tag">Remote</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">Account</span>
+            <span class="label new">New!</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Junior Frontend Developer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Frontend</span>
+              <span class="right-tag">Junior</span>
+              <span class="right-tag">JavaScript</span>
+              <span class="right-tag">React</span>
+              <span class="right-tag">Sass</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">2 days ago</span> &bull;
+            <span class="light-tag">Part Time</span> &bull;
+            <span class="light-tag">USA only</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+      <!-- Job Container 1 -->
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">MyHome</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Junior Frontend Developer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Frontend</span>
+              <span class="right-tag">Junior</span>
+              <span class="right-tag">CSS</span>
+              <span class="right-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">5 days ago</span> &bull;
+            <span class="light-tag">Contract</span> &bull;
+            <span class="light-tag">USA only</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Job Container 2 -->
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">Loop Studios</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Software Engineer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Fullstack</span>
+              <span class="right-tag">Midweight</span>
+              <span class="right-tag">JavaScript</span>
+              <span class="right-tag">Ruby</span>
+              <span class="right-tag">Sass</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">1 week ago</span> &bull;
+            <span class="light-tag">Full Time</span> &bull;
+            <span class="light-tag">Worldwide</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+      <!-- Job Container 1 -->
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">FaceIt</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Junior Backend Developer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Backend</span>
+              <span class="right-tag">Junior</span>
+              <span class="right-tag">Ruby</span>
+              <span class="right-tag">RoR</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">2 weeks ago</span> &bull;
+            <span class="light-tag">Full Time</span> &bull;
+            <span class="light-tag">UK only</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Job Container 2 -->
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">Shortly</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Junior Developer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Frontend</span>
+              <span class="right-tag">Junior</span>
+              <span class="right-tag">HTML</span>
+              <span class="right-tag">JavaScript</span>
+              <span class="right-tag">Sass</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">2 weeks ago</span> &bull;
+            <span class="light-tag">Full Time</span> &bull;
+            <span class="light-tag">Worldwide</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Job Container 3 -->
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">Insure</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Junior Frontend Developer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Frontend</span>
+              <span class="right-tag">Junior</span>
+              <span class="right-tag">JavaScript</span>
+              <span class="right-tag">Vue</span>
+              <span class="right-tag">Sass</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">2 weeks ago</span> &bull;
+            <span class="light-tag">Full Time</span> &bull;
+            <span class="light-tag">USA only</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Job Container 4 -->
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">Eyecam Co.</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Full Stack Engineer</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Fullstack</span>
+              <span class="right-tag">Midweight</span>
+              <span class="right-tag">JavaScript</span>
+              <span class="right-tag">Python</span>
+              <span class="right-tag">Django</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">3 weeks ago</span> &bull;
+            <span class="light-tag">Full Time</span> &bull;
+            <span class="light-tag">Worldwide</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Job Container 5 -->
+      <div class="job-container">
+        <div class="logo">
+          <img src="images/favicon-32x32.png" alt="Company Logo" />
+        </div>
+        <div class="job-details">
+          <h3>
+            <span class="company-name">The Air Filter Company</span>
+          </h3>
+          <div class="secondline">
+            <h2 class="job-title">Front-end Dev</h2>
+            <div class="right-tags-container">
+              <span class="right-tag">Frontend</span>
+              <span class="right-tag">Junior</span>
+              <span class="right-tag">JavaScript</span>
+              <span class="right-tag">React</span>
+              <span class="right-tag">Sass</span>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="light-tag">1 month ago</span> &bull;
+            <span class="light-tag">Part Time</span> &bull;
+            <span class="light-tag">Worldwide</span>
+          </div>
+          <button class="delete-job-button">Delete</button>
+        </div>
+      </div>
+
+    </main>
+    <div class="attribution">
+       Coded by <a href="#">Soban ur Rehman</a>.
+    </div>
+    <div class="popup-container" style="display: none">
+        <div class="popup">
+            <button class="close-popup">Close</button>
+
+            <!-- Add a new button to close the popup and return to the main page -->
+            <button class="close-popup-and-show-main">Close and Return to Main Page</button>
+        </div>
+    </div>
+    <div class="popup-container" style="display: none">
+        <div class="popup">
+            <button class="close-popup">Close</button>
+        </div>
+    </div>
+    <div class="add-button" id="addJobButton">+</div>
+    <div class="add-popup-container" style="display: none">
+        <div class="add-popup">
+            <h2>Add a New Job</h2>
+            <form id="addJobForm">
+                <div class="form-group">
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" id="jobTitle" name="jobTitle" required />
+                </div>
+                <div class="form-group">
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" name="companyName" required />
+                </div>
+                <div class="form-group">
+                    <label for="jobType">Job Type:</label>
+                    <select id="jobType" name="jobType" required>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Part Time">Part Time</option>
+                        <option value="Contract">Contract</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="jobLocation">Job Location:</label>
+                    <input type="text" id="jobLocation" name="jobLocation" required />
+                </div>
+                <div class="form-group">
+                    <label for="jobTags">Job Tags:</label>
+                    <input type="text" id="jobTags" name="jobTags" required />
+                    <div class="tags-container"></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Add Job</button>
+                </div>
+            </form>
+            <button class="close-add-popup">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
